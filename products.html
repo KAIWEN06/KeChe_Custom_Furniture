@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeChe Custom Furniture</title>
+    <link rel="stylesheet" href="productsCSS.css">
+</head>
+<body>
+    <header>
+        <h1>KeChe Custom Furniture</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Tentang Kami</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="product-gallery">
+        <div class="product-item" onclick="openModal('product1')">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc0w7w9UpXzfM8yis330O4ZWRnjLvOtx8Aq0Cn2I6O0dog63AEuD0qg_OOi-E5F7q0LG14lhXvkkuuvzZunm9P5GU09QkinpQrb_2eaG44EuQJ_YqzouIhgE_34NyAeQr6SDN2iCa02EvuF-CFEmJOTGp2Mh9PeGLkBoQwL1qHdn6BpgbLGbNEAOL5DrRt/s320/1000006711.jpg" alt="Produk 1">
+            <p>Lemari Pakaian</p>
+        </div>
+        <div class="product-item" onclick="openModal('product2')">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggaWn37Iikm1krr32hKvwUD4dy8zZU9soKYL3sCII7XcEVkLAskPDdngvs4BfKni3Bkm90F0zt9ebiP9UMEaA28GvUN_e3ziooqLYnZj-rm2qYqABTray7wj4pNplydzW6W2hbs36KiSbNpYpBcltWkx_dAVtxspd3ieDs9yPhO5g-UprJbd0IYkUnxkRS/s320/1000006545.jpg" alt="Produk 2">
+            <p>Etalase HP</p>
+        </div>
+        <!-- Tambahkan produk lainnya di sini -->
+    </section>
+
+    <!-- Modal untuk menampilkan detail produk -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalImage">
+                <img id="zoomedImage" src="" alt="Gambar Produk">
+            </div>
+            <div id="productDetails">
+                <h2 id="productName"></h2>
+                <p><strong>Ukuran:</strong> <span id="productSize"></span></p>
+                <p><strong>Harga:</strong> <span id="productPrice"></span></p>
+                <a href="#" id="product3D" target="_blank">Lihat File 3D</a>
+            </div>
+            <!-- Tombol untuk kembali ke galeri produk -->
+            <button onclick="closeModal()">Kembali ke Produk</button>
+        </div>
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2025 KeChe Custom Furniture. All Rights Reserved.</p>
+    </footer>
+
+    <script src="productsJAVA.js"></script>
+</body>
+</html>

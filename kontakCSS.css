@@ -1,0 +1,177 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #3a6186, #89253e);
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    padding-left: 20px;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: right;
+    padding-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #f8c291;
+}
+
+/* Styling untuk halaman Kontak */
+#contact {
+    padding: 60px;
+    background-color: white;
+    border-radius: 12px;
+    margin: 30px auto;
+    width: 80%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #3a6186;
+}
+
+#contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Agar elemen tidak tumpang tindih pada layar kecil */
+    gap: 20px; /* Menambahkan jarak antar elemen */
+}
+
+.contact-item {
+    width: 30%;
+    min-width: 250px; /* Mengatur lebar minimum untuk tiap item */
+    box-sizing: border-box; /* Memastikan lebar termasuk padding */
+}
+
+.contact-item h3 {
+    font-size: 1.5em;
+    color: #3a6186; /* Sesuaikan dengan warna tema */
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    font-size: 1.1em;
+    color: #333; /* Pastikan teks berwarna gelap agar mudah dibaca */
+    word-wrap: break-word; /* Mencegah teks panjang terpotong atau meluap */
+}
+
+.contact-item a {
+    text-decoration: none; /* Menghilangkan garis bawah link */
+    color: #333; /* Menggunakan warna teks biasa */
+}
+
+.contact-item a:hover {
+    color: #89253e; /* Ganti warna saat hover dengan warna yang sesuai */
+}
+
+#contact-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin: 0 auto;
+}
+
+#contact-form h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #3a6186;
+}
+
+form label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #3a6186;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+form button:hover {
+    background-color: #89253e;
+}
+
+#social-media {
+    margin-top: 30px;
+}
+
+#social-media a {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 1.2em;
+    color: #3a6186;
+    text-decoration: none;
+}
+
+#social-media a:hover {
+    color: #89253e;
+}
+
+/* Styling Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1em;
+}
