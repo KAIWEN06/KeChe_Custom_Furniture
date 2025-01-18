@@ -130,25 +130,3 @@ footer {
   font-weight: bold;
 }
 
-#menu-toggle {
-  font-size: 1.5em;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  display: inline-block;
-}
-
-#menu-list {
-  display: none;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#menu-list li {
-  margin: 10px 0;
-}
-
-.hidden {
-  display: none;
-}
