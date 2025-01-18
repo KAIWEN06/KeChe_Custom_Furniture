@@ -6,6 +6,13 @@ body {
     color: #333;
 }
 
+.logo {
+  width: 30px;  /* Atur ukuran logo */
+  height: auto; /* Menjaga aspek rasio */
+  vertical-align: middle; /* Agar sejajar dengan teks */
+  margin-right: 10px; /* Jarak antara logo dan teks */
+}
+
 header {
     background: linear-gradient(135deg, #3a6186, #89253e);
     color: white;
