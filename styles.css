@@ -7,10 +7,10 @@ body {
 }
 
 .logo {
-    height: 10px; /* Sesuaikan ukuran tinggi logo */
-    width: auto; /* Menjaga aspek rasio */
-    vertical-align: middle; /* Posisikan sejajar dengan teks */
-    margin-right: 10px; /* Beri jarak antara logo dan teks */
+    width: 50px;  /* Atur ukuran logo */
+    height: auto; /* Menjaga aspek rasio */
+    vertical-align: middle; /* Agar sejajar dengan teks */
+    margin-right: 10px; /* Jarak antara logo dan teks */
 }
 
 header {
