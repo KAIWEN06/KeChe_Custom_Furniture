@@ -1,36 +1,37 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-}
-
 header {
     background: linear-gradient(135deg, #3a6186, #89253e);
     color: white;
-    padding: 20px;
+    padding: 15px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    flex-wrap: wrap; /* Agar elemen bisa berpindah ke baris berikutnya jika perlu */
+    flex-wrap: wrap;
 }
 
-header h1 {
+/* Memastikan logo dan teks berada dalam satu baris */
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Jarak antara logo dan teks */
+}
+
+.header-brand img {
+    height: 50px; /* Sesuaikan tinggi logo */
+    width: auto; /* Menjaga aspek rasio */
+    display: block;
+}
+
+.header-brand h1 {
     margin: 0;
     font-size: 1.8em;
-    padding-left: 20px;
-    flex: 1; /* Agar header mengisi ruang yang tersedia */
-    text-align: left;
-    word-wrap: break-word; /* Agar teks panjang tidak terpotong */
-    min-width: 200px; /* Membatasi lebar minimum agar tidak terlalu kecil */
+    white-space: nowrap; /* Mencegah teks terpotong */
 }
 
+/* Memastikan navigasi tetap rapi */
 nav {
     flex-grow: 1;
     text-align: right;
-    padding-right: 20px;
 }
 
 nav ul {
@@ -39,6 +40,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 nav ul li {
@@ -51,164 +53,47 @@ nav ul li a {
     font-weight: bold;
     font-size: 1.2em;
     transition: color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Jarak antara ikon dan teks */
 }
 
+/* Pastikan ikon sejajar dengan teks */
+nav ul li a i,
+nav ul li a span.material-icons {
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+/* Hover efek */
 nav ul li a:hover {
     color: #f8c291;
 }
 
-section {
-    padding: 60px;
-    text-align: justify;
-    background: white;
-    border-radius: 12px;
-    margin: 30px auto;
-    width: 80%;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
-}
-
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-size: 1em;
-}
-
-.gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.gallery a {
-    display: block;
-    text-align: center;
-    width: 200px;
-}
-
-.gallery img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-}
-
-.info {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #333;
-}
-
-.info .name {
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.info .size {
-    font-size: 14px;
-    color: #888;
-}
-
-.info .price {
-    font-size: 16px;
-    color: #e74c3c;
-    font-weight: bold;
-}
-
-/* Media Query untuk Tablet */
+/* Responsive */
 @media screen and (max-width: 768px) {
     header {
-        padding: 15px; /* Menyesuaikan padding untuk tablet */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    header h1 {
-        font-size: 1.6em; /* Menurunkan ukuran font */
-        padding-left: 10px;
+    .header-brand {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    nav {
         text-align: center;
+        width: 100%;
     }
 
     nav ul {
         flex-direction: column;
-        text-align: center;
-        margin-top: 10px;
+        align-items: center;
     }
 
     nav ul li {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    section {
-        padding: 40px;
-        width: 90%; /* Lebar section lebih besar pada tablet */
-    }
-
-    footer {
-        font-size: 0.9em; /* Ukuran font lebih kecil di footer */
-    }
-
-    .gallery {
-        gap: 15px;
-    }
-
-    .gallery a {
-        width: 150px;
-    }
-
-    .gallery img {
-        width: 150px;
-        height: 150px;
-    }
-}
-
-/* Media Query untuk Mobile */
-@media screen and (max-width: 480px) {
-    header h1 {
-        font-size: 1.4em; /* Ukuran font lebih kecil untuk mobile */
-        padding-left: 5px; /* Mengurangi padding */
-        text-align: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin-top: 10px;
-    }
-
-    section {
-        padding: 20px;
-        width: 95%;
-    }
-
-    footer {
-        font-size: 0.8em; /* Ukuran font footer lebih kecil */
-    }
-
-    .gallery {
-        gap: 10px;
-    }
-
-    .gallery a {
-        width: 120px;
-    }
-
-    .gallery img {
-        width: 120px;
-        height: 120px;
+        margin: 10px 0;
     }
 }
