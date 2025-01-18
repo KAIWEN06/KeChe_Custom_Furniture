@@ -14,16 +14,17 @@ header {
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    flex-wrap: wrap; /* Menambahkan flex-wrap agar lebih responsif */
+    flex-wrap: wrap; /* Agar elemen bisa berpindah ke baris berikutnya jika perlu */
 }
 
 header h1 {
     margin: 0;
     font-size: 1.8em;
     padding-left: 20px;
+    flex: 1; /* Agar header mengisi ruang yang tersedia */
+    text-align: left;
     word-wrap: break-word; /* Agar teks panjang tidak terpotong */
-    text-align: center;
-    flex: 1; /* Memberikan fleksibilitas untuk header */
+    min-width: 200px; /* Membatasi lebar minimum agar tidak terlalu kecil */
 }
 
 nav {
@@ -69,7 +70,7 @@ section {
 footer {
     background: #333;
     color: white;
-    text-align: justify;
+    text-align: center;
     padding: 20px;
     position: relative;
     bottom: 0;
@@ -129,36 +130,38 @@ footer {
 
 /* Media Query untuk Tablet */
 @media screen and (max-width: 768px) {
+    header {
+        padding: 15px; /* Menyesuaikan padding untuk tablet */
+    }
+
     header h1 {
-        font-size: 1.6em; /* Mengurangi ukuran font untuk tablet */
-        padding-left: 10px; /* Mengurangi padding */
+        font-size: 1.6em; /* Menurunkan ukuran font */
+        padding-left: 10px;
         text-align: center;
     }
 
     nav ul {
         flex-direction: column;
-        justify-content: center;
         text-align: center;
-        padding: 10px 0;
+        margin-top: 10px;
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin-left: 0;
+        margin-top: 10px;
     }
 
     section {
-        padding: 30px;
-        width: 90%; /* Lebar section lebih lebar pada tablet */
+        padding: 40px;
+        width: 90%; /* Lebar section lebih besar pada tablet */
     }
 
     footer {
         font-size: 0.9em; /* Ukuran font lebih kecil di footer */
-        text-align: center;
     }
 
     .gallery {
         gap: 15px;
-        justify-content: center;
     }
 
     .gallery a {
@@ -174,16 +177,26 @@ footer {
 /* Media Query untuk Mobile */
 @media screen and (max-width: 480px) {
     header h1 {
-        font-size: 1.4em; /* Ukuran lebih kecil pada layar lebih kecil */
+        font-size: 1.4em; /* Ukuran font lebih kecil untuk mobile */
+        padding-left: 5px; /* Mengurangi padding */
+        text-align: center;
     }
 
     nav ul {
         flex-direction: column;
     }
 
+    nav ul li {
+        margin-top: 10px;
+    }
+
     section {
         padding: 20px;
         width: 95%;
+    }
+
+    footer {
+        font-size: 0.8em; /* Ukuran font footer lebih kecil */
     }
 
     .gallery {
