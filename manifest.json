@@ -1,0 +1,21 @@
+{
+    "name": "KeChe Custom Furniture",
+    "short_name": "KeChe",
+    "description": "Custom Furniture Store",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#89253e",
+    "icons": [
+      {
+        "src": "KeChe_logo.png",
+        "sizes": "192x192",
+        "type": "png"
+      },
+      {
+        "src": "KeChe_logo.png",
+        "sizes": "512x512",
+        "type": "png"
+      }
+    ]
+  }
