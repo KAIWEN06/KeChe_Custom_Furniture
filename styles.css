@@ -7,7 +7,7 @@ body {
 }
 
 .logo {
-    width: 50px;  /* Atur ukuran logo */
+    width: 30px;  /* Atur ukuran logo */
     height: auto; /* Menjaga aspek rasio */
     vertical-align: middle; /* Agar sejajar dengan teks */
     margin-right: 10px; /* Jarak antara logo dan teks */
