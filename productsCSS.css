@@ -6,13 +6,6 @@ body {
     color: #333;
 }
 
-.logo {
-  width: 30px;  /* Atur ukuran logo */
-  height: auto; /* Menjaga aspek rasio */
-  vertical-align: middle; /* Agar sejajar dengan teks */
-  margin-right: 10px; /* Jarak antara logo dan teks */
-}
-
 header {
     background: linear-gradient(135deg, #3a6186, #89253e);
     color: white;
@@ -148,10 +141,11 @@ p {
 
 #product3D {
     display: block;
-    margin-top: 20px;
-    color: #3a6186;
+    margin-top: 10px;
+    color: #406e9a;
     font-weight: bold;
     text-decoration: none;
+    text-decoration: none; /* Menghilangkan garis bawah */
 }
 
 
@@ -174,3 +168,5 @@ footer {
     width: 100%;
     font-size: 1em;
 }
+
+
