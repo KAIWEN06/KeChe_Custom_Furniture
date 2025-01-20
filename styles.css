@@ -7,17 +7,10 @@ body {
 }
 
 .logo {
-  width: 30px;
-  height: auto;
-  vertical-align: middle;
-  margin-right: 10px;
-}
-
-.List-Menu-icon {
-  display: none;
-  font-size: 28px;
-  margin-left: auto;
-  cursor: pointer;
+  width: 30px;  /* Atur ukuran logo */
+  height: auto; /* Menjaga aspek rasio */
+  vertical-align: middle; /* Agar sejajar dengan teks */
+  margin-right: 10px; /* Jarak antara logo dan teks */
 }
 
 header {
@@ -28,23 +21,9 @@ header {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  position: relative;
 }
 
-.header_besar {
-  margin: 0;
-  font-size: 0.7em;
-  padding-left: 20px;
-}
-
-.header_besar h1 {
-  margin: 0;
-  font-size: 2.8em;
-  padding-left: 20px;
-}
-
-.header_kecil {
-  display: none;
+header h1 {
   margin: 0;
   font-size: 1.8em;
   padding-left: 20px;
@@ -54,18 +33,14 @@ nav {
   flex-grow: 1;
   text-align: right;
   padding-right: 20px;
-  display: flex;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-left: auto;
   display: flex;
   justify-content: flex-end;
-  width: 230px;
-  align-items: center;
 }
 
 nav ul li {
@@ -86,7 +61,7 @@ nav ul li a:hover {
 
 section {
   padding: 60px;
-  text-align: justify;
+  text-align: justify;  /* Menambahkan justify untuk teks */
   background: white;
   border-radius: 12px;
   margin: 30px auto;
@@ -97,7 +72,7 @@ section {
 footer {
   background: #333;
   color: white;
-  text-align: justify;
+  text-align: justify;  /* Menambahkan justify untuk footer */
   padding: 20px;
   position: relative;
   bottom: 0;
@@ -153,49 +128,4 @@ footer {
   font-size: 16px;
   color: #e74c3c;
   font-weight: bold;
-}
-
-@media only screen and (max-width: 768px) {
-  nav {
-    flex-wrap: wrap;
-  }
-
-  nav ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    padding-left: 0;
-    text-align: center;
-    background: #3a6186;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-  }
-
-  nav ul.show {
-    display: flex;
-  }
-
-  nav ul li {
-    width: 100%;
-    padding: 10px 0;
-  }
-
-  .List-Menu-icon {
-    display: block;
-  }
-
-  .header_kecil {
-    display: block;
-    font-size: 1.3em;
-    padding-left: 20px;
-    position: absolute;
-    top: 10px;
-    left: 0px;
-  }
-
-  .header_besar {
-    display: none;
-  }
 }
