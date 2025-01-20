@@ -154,52 +154,46 @@ footer {
   color: #e74c3c;
   font-weight: bold;
 }
+@media only screen and (max-width : 768px){
+nav{
+  flex-wrap: wrap;
+}
 
-@media only screen and (max-width: 768px) {
-  nav {
-    flex-wrap: wrap;
-  }
-
-  nav ul {
-    display: none;
+  nav ul{
+    padding-left: 71%;
     flex-direction: column;
     width: 100%;
-    padding-left: 0;
-    text-align: center;
-    background: #3a6186;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
   }
 
-  nav ul.show {
-    display: flex;
+  nav ul.hidden{
+    display: none;
   }
 
-  nav ul li {
-    width: 100%;
-    padding: 10px 0;
-  }
-
-  .List-Menu-icon {
+  .List-Menu-icon{
+    font-size: 28px;
+    width: 30px;
+    height: px;
+    margin-left: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-    cursor: pointer;
   }
 
-  .header_kecil {
-    display: block;
+  .header_kecil{
+    margin: 0;
     font-size: 1.3em;
     padding-left: 20px;
-    position: absolute;
-    top: 10px;
+    display: block;
+    top: 10px; /* Sesuaikan posisi */
     left: 0px;
   }
 
-  .header_besar {
+  .header_kecil h1{
+    margin: 0;
+    font-size: 1.8em;
+    padding-left: 20px;
+  }
+
+  .header_besar{
     display: none;
   }
 }
