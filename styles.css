@@ -13,6 +13,12 @@ body {
   margin-right: 10px; /* Jarak antara logo dan teks */
 }
 
+.List-Menu-icon{
+  display: none;
+  font-size: 28px;
+  margin-left: auto;
+}
+
 header {
   background: linear-gradient(135deg, #3a6186, #89253e);
   color: white;
@@ -23,7 +29,20 @@ header {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
+.header_besar{
+  margin: 0;
+  font-size: 0.7em;
+  padding-left: 20px;
+}
+
+.header_besar h1{
+  margin: 0;
+  font-size: 2.8em;
+  padding-left: 20px;
+}
+
+.header_kecil{
+  display: none;
   margin: 0;
   font-size: 1.8em;
   padding-left: 20px;
@@ -33,14 +52,19 @@ nav {
   flex-grow: 1;
   text-align: right;
   padding-right: 20px;
+  display: flex;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-left: auto;
   display: flex;
   justify-content: flex-end;
+  width: 230px;
+  align-items: center; /* Menengahkan vertikal */
+  transform: translateY(-px); /* Geser ke atas 5px */
 }
 
 nav ul li {
@@ -130,3 +154,50 @@ footer {
   font-weight: bold;
 }
 
+@media only screen and (max-width : 768px){
+nav{
+  flex-wrap: wrap;
+}
+
+  nav ul{
+    padding-left: 71%;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul.hidden{
+    display: none;
+  }
+
+  .List-Menu-icon{
+    font-size: 28px;
+    width: 30px;
+    height: px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .header_kecil{
+    margin: 0;
+    font-size: 1.3em;
+    padding-left: 20px;
+    display: block;
+    position: absolute;
+    top: 10px; /* Sesuaikan posisi */
+    left: 0px;
+  }
+
+  .header_kecil h1{
+    margin: 0;
+    font-size: 1.8em;
+    padding-left: 20px;
+  }
+
+  .header_besar{
+    display: none;
+  }
+
+
+  
+}
