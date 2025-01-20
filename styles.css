@@ -7,16 +7,17 @@ body {
 }
 
 .logo {
-  width: 30px;  /* Atur ukuran logo */
-  height: auto; /* Menjaga aspek rasio */
-  vertical-align: middle; /* Agar sejajar dengan teks */
-  margin-right: 10px; /* Jarak antara logo dan teks */
+  width: 30px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
-.List-Menu-icon{
+.List-Menu-icon {
   display: none;
   font-size: 28px;
   margin-left: auto;
+  cursor: pointer;
 }
 
 header {
@@ -27,21 +28,22 @@ header {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
-.header_besar{
+.header_besar {
   margin: 0;
   font-size: 0.7em;
   padding-left: 20px;
 }
 
-.header_besar h1{
+.header_besar h1 {
   margin: 0;
   font-size: 2.8em;
   padding-left: 20px;
 }
 
-.header_kecil{
+.header_kecil {
   display: none;
   margin: 0;
   font-size: 1.8em;
@@ -63,8 +65,7 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   width: 230px;
-  align-items: center; /* Menengahkan vertikal */
-  transform: translateY(-px); /* Geser ke atas 5px */
+  align-items: center;
 }
 
 nav ul li {
@@ -85,7 +86,7 @@ nav ul li a:hover {
 
 section {
   padding: 60px;
-  text-align: justify;  /* Menambahkan justify untuk teks */
+  text-align: justify;
   background: white;
   border-radius: 12px;
   margin: 30px auto;
@@ -96,7 +97,7 @@ section {
 footer {
   background: #333;
   color: white;
-  text-align: justify;  /* Menambahkan justify untuk footer */
+  text-align: justify;
   padding: 20px;
   position: relative;
   bottom: 0;
@@ -154,48 +155,47 @@ footer {
   font-weight: bold;
 }
 
-@media only screen and (max-width : 768px){
-nav{
-  flex-wrap: wrap;
-}
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+  }
 
-  nav ul{
-    padding-left: 71%;
+  nav ul {
+    display: none;
     flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+    background: #3a6186;
+    position: absolute;
+    top: 60px;
+    left: 0;
     width: 100%;
   }
 
-  nav ul.hidden{
-    display: none;
-  }
-
-  .List-Menu-icon{
-    font-size: 28px;
-    width: 30px;
-    height: px;
-    margin-left: auto;
+  nav ul.show {
     display: flex;
-    align-items: center;
   }
 
-  .header_kecil{
-    margin: 0;
+  nav ul li {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .List-Menu-icon {
+    display: block;
+  }
+
+  .header_kecil {
+    display: block;
     font-size: 1.3em;
     padding-left: 20px;
-    display: block;
     position: absolute;
-    top: 10px; /* Sesuaikan posisi */
+    top: 10px;
     left: 0px;
   }
 
-  .header_kecil h1{
-    margin: 0;
-    font-size: 1.8em;
-    padding-left: 20px;
-  }
-
-  .header_besar{
+  .header_besar {
     display: none;
   }
-  
 }
