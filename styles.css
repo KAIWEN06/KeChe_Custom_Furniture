@@ -160,7 +160,7 @@ nav{
 }
 
   nav ul{
-    padding-left: 71%;
+    padding-left: 10%;
     flex-direction: column;
     width: 100%;
   }
@@ -172,7 +172,7 @@ nav{
   .List-Menu-icon{
     font-size: 28px;
     width: 30px;
-    height: px;
+    height: 20px;
     margin-left: auto;
     display: flex;
     align-items: center;
