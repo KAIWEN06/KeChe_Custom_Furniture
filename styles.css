@@ -160,7 +160,6 @@ nav{
 }
 
   nav ul{
-    background-color: aquamarine;
     padding-left: 10%;
     flex-direction: column;
     width: 100%;
@@ -171,7 +170,6 @@ nav{
   }
 
   .List-Menu-icon{
-    background-color: aquamarine;
     font-size: 30px;
     width: 30px;
     height: 20px;
@@ -185,6 +183,7 @@ nav{
     font-size: 1.3em;
     padding-left: 20px;
     display: block;
+    position: absolute;
     top: 10px; /* Sesuaikan posisi */
     left: 0px;
   }
