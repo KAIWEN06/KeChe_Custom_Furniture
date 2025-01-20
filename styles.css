@@ -171,7 +171,8 @@ nav{
   }
 
   .List-Menu-icon{
-    font-size: 28px;
+    background-color: aquamarine;
+    font-size: 30px;
     width: 30px;
     height: 20px;
     margin-left: auto;
