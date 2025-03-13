@@ -12,7 +12,7 @@ function openModal(productId) {
         name.textContent = 'Lemari Pakaian';
         size.textContent = '100x50x30 cm';
         price.textContent = 'Rp 1.500.000';
-        file3D.href = 'https://3dwarehouse.sketchup.com/model/445f6ce0-cabf-4c7f-bb65-6dfab2955885/3D-wardrobe';  // Ganti dengan URL file 3D produk
+        file3D.href = './3DHTML/index.html';  // Ganti dengan URL file 3D produk
     } else if (productId === 'product2') {
         image.src = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggaWn37Iikm1krr32hKvwUD4dy8zZU9soKYL3sCII7XcEVkLAskPDdngvs4BfKni3Bkm90F0zt9ebiP9UMEaA28GvUN_e3ziooqLYnZj-rm2qYqABTray7wj4pNplydzW6W2hbs36KiSbNpYpBcltWkx_dAVtxspd3ieDs9yPhO5g-UprJbd0IYkUnxkRS/s320/1000006545.jpg';
         name.textContent = 'Nama Produk 2';
