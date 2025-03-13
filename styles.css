@@ -114,6 +114,7 @@ footer {
   gap: 20px;
   flex-wrap: wrap;
   padding: 20px;
+  width: 100%;
 }
 
 .gallery a {
