@@ -43,7 +43,6 @@ header {
   margin: 0;
   font-size: 2.8em;
   padding-left: 20px;
-  width: 100%;
 }
 
 .header_kecil {
@@ -51,7 +50,6 @@ header {
   margin: 0;
   font-size: 1.8em;
   padding-left: 20px;
-  width: 100%;
 }
 
 nav {
