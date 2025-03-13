@@ -135,27 +135,6 @@ footer {
   transform: scale(1.05);
 }
 
-.info {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #333;
-}
-
-.info .name {
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.info .size {
-  font-size: 14px;
-  color: #888;
-}
-
-.info .price {
-  font-size: 16px;
-  color: #e74c3c;
-  font-weight: bold;
-}
 @media only screen and (max-width : 768px){
 nav{
   flex-wrap: wrap;
