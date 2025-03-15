@@ -201,6 +201,10 @@ form button:hover {
     text-decoration: none;
 }
 
+#social-media h3 {
+    color: #E16428;
+}
+
 #social-media a:hover {
     color: #E16428;;
 }
