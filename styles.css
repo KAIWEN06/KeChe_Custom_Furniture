@@ -98,6 +98,10 @@ section {
   width: 80%;
 }
 
+section h2{
+  color:#E16428;
+}
+
 footer {
   background: linear-gradient(#2d2a21, #E16428) ;
   color: white;
