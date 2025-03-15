@@ -114,7 +114,7 @@ header {
 }
 
 .contact-item {
-    width: 20%;
+    width: 10%;
     min-width: 240px; /* Mengatur lebar minimum untuk tiap item */
     box-sizing: border-box; /* Memastikan lebar termasuk padding */
 }
