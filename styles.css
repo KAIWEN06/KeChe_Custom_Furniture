@@ -1,103 +1,105 @@
-body {
-  font-family: 'Poppins', sans-serif;
+/* Reset styling untuk margin dan padding */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
+  box-sizing: border-box;
+}
+
+/* Reset styling untuk margin dan padding */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #272121;
   color: #333;
 }
 
 .logo {
-  width: 30px;
-  height: auto;
-  vertical-align: middle;
-  margin-right: 10px;
+  display: flex;
+  align-items: center;
 }
 
-.List-Menu-icon {
-  display: none;
-  font-size: 28px;
-  margin-left: auto;
-  cursor: pointer;
+.logo img {
+  width: 30px; /* Atur ukuran logo */
+  height: auto;
+  margin-right: 10px; /* Beri jarak antara logo dan teks */
+}
+
+.company-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: white; /* Sesuaikan warna teks */
 }
 
 header {
-  background: linear-gradient(135deg, #3a6186, #89253e);
+  background: linear-gradient(135deg, #2d2a21, #E16428);
   color: white;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding: 15px 20px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   position: relative;
-  width: 110%;
-}
-
-.header_besar {
   margin: 0;
-  font-size: 0.7em;
-  padding-left: 20px;
-  width: 110%;
 }
 
-.header_besar h1 {
-  margin: 0;
-  font-size: 2.8em;
-  padding-left: 20px;
-}
-
-.header_kecil {
-  display: none;
-  margin: 0;
-  font-size: 1.8em;
-  padding-left: 20px;
-}
-
-nav {
-  flex-grow: 1;
-  text-align: right;
-  padding-right: 20px;
+/* Styling untuk navbar */
+.navbar {
   display: flex;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-left: auto;
-  display: flex;
-  justify-content: flex-end;
-  width: 230px;
+  justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
+  background-color: transparent;;
 }
 
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li a {
+.navbar .logo a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2em;
-  transition: color 0.3s ease-in-out;
+  font-size: 24px;
 }
 
-nav ul li a:hover {
-  color: #f8c291;
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px;
+}
+
+.nav-links a:hover {
+  background:linear-gradient(135deg, #271d1d, #c66c05);
+  border-radius: 5px;
+
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
 }
 
 section {
   padding: 60px;
   text-align: justify;
-  background: white;
+  background: #d7d6d5;
   border-radius: 12px;
   margin: 30px auto;
   width: 80%;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 footer {
-  background: #333;
+  background: linear-gradient(#2d2a21, #E16428) ;
   color: white;
   text-align: justify;
   padding: 20px;
@@ -114,7 +116,6 @@ footer {
   gap: 20px;
   flex-wrap: wrap;
   padding: 20px;
-  width: 100%;
 }
 
 .gallery a {
@@ -136,47 +137,46 @@ footer {
   transform: scale(1.05);
 }
 
-@media only screen and (max-width : 768px){
-nav{
-  flex-wrap: wrap;
-}
-
-  nav ul{
-    padding-left: 60%;
-    flex-direction: column;
-    width: 100%;
+/* Responsif untuk layar kecil */
+@media screen and (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 89px;
+      left: 0;
+      background: transparent ; /* Warna transparan */;
+      backdrop-filter: blur(10px); /* Efek blur */
+      -webkit-backdrop-filter: blur(10px); /* Dukungan untuk Safari */
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Garis bawah halus */
+      text-align: center;
+      padding: 60px;
+      transition: transform 0.3s ease;
   }
-
-  nav ul.hidden{
-    display: none;
+  .company-name::after {
+    content: "KeChe"; /* Ganti teks menjadi hanya 'KeChe' */
+    font-size: 25px;
   }
-
-  .List-Menu-icon{
-    font-size: 30px;
-    width: 30px;
-    height: 20px;
-    margin-left: auto;
-    display: flex;
-    align-items: center;
+  .company-name{
+      visibility: hidden; /* Sembunyikan teks awal */
+      position: relative;
   }
-
-  .header_kecil{
-    margin: 0;
-    font-size: 1.3em;
-    padding-left: 20px;
-    display: block;
+  .company-name::after {
+    visibility: visible;
     position: absolute;
-    top: 10px; /* Sesuaikan posisi */
-    left: 0px;
+    left: 0;
   }
 
-  .header_kecil h1{
-    margin: 0;
-    font-size: 1.8em;
-    padding-left: 20px;
+  .nav-links.active {
+      display: flex;
   }
 
-  .header_besar{
-    display: none;
+  .nav-links li {
+       margin: 10px 0;
+  }
+
+  .hamburger {
+       display: block;
   }
 }
