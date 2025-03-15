@@ -1,62 +1,92 @@
+/* Reset styling untuk margin dan padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reset styling untuk margin dan padding */
+
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+  font-family: 'Poppins', sans-serif;
+  background-color: #272121;
+  color: #333;
 }
 
 .logo {
-    width: 30px;  /* Atur ukuran logo */
-    height: auto; /* Menjaga aspek rasio */
-    vertical-align: middle; /* Agar sejajar dengan teks */
-    margin-right: 10px; /* Jarak antara logo dan teks */
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 30px; /* Atur ukuran logo */
+  height: auto;
+  margin-right: 10px; /* Beri jarak antara logo dan teks */
+}
+
+.company-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: white; /* Sesuaikan warna teks */
 }
 
 header {
-    background: linear-gradient(135deg, #3a6186, #89253e);
-    color: white;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #2d2a21, #E16428);
+  color: white;
+  padding: 15px 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  position: relative;
+  margin: 0;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 1.8em;
-    padding-left: 20px;
+/* Styling untuk navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: transparent;;
 }
 
-nav {
-    flex-grow: 1;
-    text-align: right;
-    padding-right: 20px;
+.navbar .logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
+.nav-links {
+  list-style-type: none;
+  display: flex;
 }
 
-nav ul li {
-    margin-left: 20px;
+.nav-links li {
+  margin: 0 15px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;
-    transition: color 0.3s ease-in-out;
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px;
 }
 
-nav ul li a:hover {
-    color: #f8c291;
+.nav-links a:hover {
+  background:linear-gradient(135deg, #271d1d, #c66c05);
+  border-radius: 5px;
+
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
 }
 
 /* Styling untuk halaman Kontak */
@@ -173,12 +203,63 @@ form button:hover {
 
 /* Styling Footer */
 footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-size: 1em;
+  background: linear-gradient(#2d2a21, #E16428) ;
+  color: white;
+  text-align: justify;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 1em;
+}
+
+/* Responsif untuk layar kecil */
+@media screen and (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 89px;
+      left: 0;
+      background: transparent ; /* Warna transparan */;
+      backdrop-filter: blur(10px); /* Efek blur */
+      -webkit-backdrop-filter: blur(10px); /* Dukungan untuk Safari */
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Garis bawah halus */
+      text-align: center;
+      padding: 60px;
+      transition: transform 0.3s ease;
+  }
+  .company-name::after {
+    content: "KeChe";
+    font-size: 25px;
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+  }
+  .company-name{
+      visibility: hidden; /* Sembunyikan teks awal */
+      position: relative;
+  }
+  .company-name::after {
+    visibility: visible;
+    position: absolute;
+    left: 0;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .nav-links li {
+       margin: 10px 0;
+  }
+
+  .hamburger {
+       display: block;
+  }
 }
