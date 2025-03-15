@@ -105,6 +105,10 @@ header {
     color: #E16428;
 }
 
+#contact-info p{
+  color #E16428:
+}
+
 #contact-info {
     display: flex;
     justify-content: space-between;
