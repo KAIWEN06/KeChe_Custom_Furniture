@@ -131,7 +131,7 @@ header {
 
 .contact-item p {
     font-size: 1.1em;
-    color: #E16428; /* Pastikan teks berwarna gelap agar mudah dibaca */
+    color: #89253e; /* Pastikan teks berwarna gelap agar mudah dibaca */
     word-wrap: break-word; /* Mencegah teks panjang terpotong atau meluap */
 }
 
@@ -197,12 +197,12 @@ form button:hover {
     display: inline-block;
     margin: 0 15px;
     font-size: 1.2em;
-    color: #3a6186;
+    color: #E16428;
     text-decoration: none;
 }
 
 #social-media a:hover {
-    color: #89253e;
+    color: #E16428;;
 }
 
 /* Styling Footer */
