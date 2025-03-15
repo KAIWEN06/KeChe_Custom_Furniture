@@ -157,6 +157,7 @@ footer {
   .company-name::after {
     content: "KeChe"; /* Ganti teks menjadi hanya 'KeChe' */
     font-size: 25px;
+    align-items: center;
   }
   .company-name{
       visibility: hidden; /* Sembunyikan teks awal */
