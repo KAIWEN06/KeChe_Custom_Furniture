@@ -91,10 +91,10 @@ header {
 
 /* Styling untuk halaman Kontak */
 #contact {
-    padding: 0px;
+    padding: 60%;
     background-color: white;
-    border-radius: 12px;
-    margin: 0px auto;
+    border-radius: 12%;
+    margin: 30% auto;
     width: 80%;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
 }
