@@ -7,22 +7,25 @@
     <title>Produk - Custom Furniture</title>
     <link rel="stylesheet" href="productsCSS.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
-    <h1>
-        <img src="KeChe_logo.png" alt="KeChe Custom Furniture Logo" class="logo">
-        KeChe Custom Furniture
-    </h1>
-    <nav>
-        <ul>
-            <li><a href="index.html"><i class="fas fa-info-circle"></i> Tentang Kami</a></li>
-            <li><a href="kontak.html"><i class="fas fa-envelope"></i> Kontak</a></li>
-        </ul>
-    </nav>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="KeChe_logo.png" alt="KeChe Custom Furniture Logo" class="logo">
+                <span class="company-name">KeChe Custom Furniture</span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Home <i class="fa-solid fa-house" style="color: #ffffff;"></i></a></li>
+                <li><a href="index.html">About <i class="fa-solid fa-circle-info" style="color: #ffffff;"></i></a></li>
+                <li><a href="products.html">Product <i class="fas fa-box-open"></i></a></li>
+                <li><a href="kontak.html">Contact <i class="fas fa-envelope"></i></a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                &#9776;
+            </div>
+        </nav>
     </header>
-
 
     <section id="product-gallery">
         <div class="product-item" onclick="openModal('product1')">
@@ -60,5 +63,6 @@
     </footer>
 
     <script src="productsJAVA.js"></script>
+    <script src="navbar.js"></script>
 </body>
 </html>
