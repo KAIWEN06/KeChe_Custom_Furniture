@@ -155,8 +155,14 @@ footer {
       transition: transform 0.3s ease;
   }
   .company-name::after {
-    content: "KeChe"; /* Ganti teks menjadi hanya 'KeChe' */
+    content: "KeChe";
     font-size: 25px;
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
     align-items: center;
   }
   .company-name{
