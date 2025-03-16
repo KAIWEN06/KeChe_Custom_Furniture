@@ -61,7 +61,6 @@ header {
 
   .nav-links {
     list-style-type: none;
-    display: flex;
     flex-direction: row; /* Pastikan tetap horizontal */
     align-items: center; /* Pusatkan vertikal */
   }
