@@ -61,14 +61,10 @@ header {
 
   .nav-links {
     list-style-type: none;
-    flex-direction: row; /* Pastikan tetap horizontal */
-    align-items: center; /* Pusatkan vertikal */
   }
   
   .nav-links li {
-    margin: 0 15px;
-    display: flex;
-    align-items: center;
+    margin: 0 15px
   }
   
   .nav-links a:hover {
