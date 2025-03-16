@@ -59,19 +59,27 @@ header {
   font-size: 24px;
 }
 
-  .nav-links {
-    list-style-type: none;
-  }
-  
-  .nav-links li {
-    margin: 0 15px
-  }
-  
-  .nav-links a:hover {
-    background:linear-gradient(135deg, #271d1d, #c66c05);
-    border-radius: 5px;
-    transform: translateY(-2px) scale(1.05);
-  }
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px;
+}
+
+.nav-links a:hover {
+  background:linear-gradient(135deg, #271d1d, #c66c05);
+  border-radius: 5px;
+
+}
 
 /* Hamburger menu */
 .hamburger {
