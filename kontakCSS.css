@@ -61,7 +61,7 @@ header {
 
   .nav-links li {
     margin: 0 15px;
-    display: grid;
+    display: flex;
   }
   
   .nav-links a {
