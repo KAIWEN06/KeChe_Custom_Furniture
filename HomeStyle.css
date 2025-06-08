@@ -1,0 +1,742 @@
+/* Reset styling untuk margin dan padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reset styling untuk margin dan padding */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #272121;
+  color: #333;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Logo dan Header */
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 30px; /* Atur ukuran logo */
+  height: auto;
+  margin-right: 10px; /* Beri jarak antara logo dan teks */
+}
+
+.company-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: white; /* Sesuaikan warna teks */
+  height: auto
+}
+
+header {
+  background: linear-gradient(135deg, #2d2a21, #E16428);
+  color: white;
+  padding: 15px 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  position: relative;
+  margin: 0;
+}
+
+/* Header dan navbar di atas video */
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-hero {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 1;
+}
+
+.hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Navbar, logo, dan navigasi di layer paling depan */
+.navbar {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px 0 40px;
+    background: rgba(30,30,30,0.45); /* semi-transparan agar tetap terbaca */
+    backdrop-filter: blur(4px);
+    border-radius: 0 0 20px 20px;
+}
+
+/* Tombol di atas video */
+.video-hero .btn {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 10;
+    background: rgba(255,255,255,0.9);
+    color: #333;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border: none;
+}
+
+/* Sections */
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width */
+    margin: 0; /* Hapus margin */
+    padding: 60px 5%; /* Padding horizontal 5% */
+    border-radius: 0; /* Hapus border radius */
+}
+
+/* Update .section-bg styling */
+.section-bg {
+    position: relative;
+    padding: 100px 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.section-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Make overlay slightly more transparent */
+    z-index: 1;
+}
+
+.section-bg > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Hero, About, Services, Contact Sections */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Ubah ke center */
+    justify-content: center;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Overlay gradien yang lebih halus */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.4) 0%,
+        rgba(0,0,0,0.6) 50%,
+        rgba(0,0,0,0.8) 100%
+    );
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    width: 90%;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    line-height: 1.6;
+}
+
+/* Video Hero Section */
+.video-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+}
+
+.hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Header overlay di dalam video */
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: rgba(30,30,30,0.45); /* semi-transparent, bisa diubah sesuai selera */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    backdrop-filter: blur(4px);
+}
+
+/* Navbar dan logo tetap gunakan styling yang sama seperti sebelumnya */
+
+/* Pastikan tombol tetap di atas video */
+.video-hero .btn {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 10;
+    background: rgba(255,255,255,0.9);
+    color: #333;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border: none;
+}
+
+/* Video background full header */
+.header-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Overlay untuk konten header */
+.header-overlay {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    top: -25px;
+    background: rgba(30,30,30,0.25); /* sedikit fade agar teks lebih jelas */
+}
+
+/* Logo dan nama perusahaan */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.logo img {
+    height: 48px;
+}
+.company-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+.nav-links li a {
+    color: #E16428;
+    display: flex;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    transition: color 0.2s;
+}
+.nav-links li a:hover {
+    color: #E16428;
+}
+.hamburger {
+    display: none;
+}
+
+/* Tombol Lihat Layanan */
+.btn-hero {
+    margin-top: auto;
+    margin-bottom: 60px;
+    padding: 1rem 2.5rem;
+    background: #E16428;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+    z-index: 3;
+    text-decoration: none;
+}
+.btn-hero:hover {
+    background: #E16428;
+    color: #fff;
+}
+
+/* HEADER HERO VIDEO */
+.header-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.header-overlay {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: transparent !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+}
+
+/* HEADER TOP BAR */
+.header-topbar {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 48px 0 48px;
+    background: rgba(30,30,30,0.25); /* sedikit transparan, tanpa blur */
+    z-index: 3;
+}
+
+/* LOGO & NAMA PERUSAHAAN KIRI ATAS */
+.logo-area {
+    display: flex;
+    align-items: center;   /* PENTING: agar logo dan teks sejajar */
+    gap: 1rem;
+}
+.logo-area img {
+    height: 48px;
+}
+.company-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    margin-left: 8px;
+    align-items: center;
+    white-space: nowrap; /* Agar tidak turun ke bawah */
+    visibility: visible; /* Pastikan selalu terlihat */
+    position: static;    /* Pastikan tidak absolute di desktop */
+}
+
+/* NAVIGASI KANAN ATAS */
+.navbar {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: transparent !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+}
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding-left:50rem;
+}
+.nav-links li a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    transition: color 0.2s;
+}
+.nav-links li a:hover {
+    color: #E16428;
+}
+.hamburger {
+    display: none;
+}
+
+/* TOMBOL LIHAT LAYANAN KANAN BAWAH */
+.btn-hero {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 10;
+    background: rgba(255,255,255,0.9);
+    color: #333;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+    text-decoration: none;
+}
+.btn-hero:hover {
+    background: #E16428;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 16px 16px 0 16px;
+    }
+    .logo-area img {
+        height: 32px;
+    }
+    .company-name {
+        font-size: 1.1rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        background: rgba(30,30,30,0.95);
+        position: fixed;
+        top: 0; right: -100%;
+        width: 60%;
+        height: 100vh;
+        align-items: flex-start;
+        padding: 2rem;
+        transition: right 0.3s;
+        z-index: 100;
+    }
+    .nav-links.active {
+        right: 0;
+    }
+    .hamburger {
+        display: block;
+        color: #fff;
+        font-size: 2rem;
+        margin-left: 1rem;
+        cursor: pointer;
+    }
+    .btn-hero {
+        bottom: 1rem;
+        right: 1rem;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* Landscape mode */
+@media screen and (max-height: 500px) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .hero-content {
+        margin: 4rem 0;
+        padding: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .hero-content {
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+}
+
+.about-section {
+    background-image: url('images/about-bg.jpg');
+}
+
+.services-section {
+    background-image: url('images/services-bg.jpg');
+}
+
+.contact-section {
+    background-image: url('images/contact-bg.jpg');
+}
+
+/* Meningkatkan kontras untuk text */
+.section-bg h1,
+.section-bg h2,
+.section-bg p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Service Cards */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.service-card {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    text-shadow: none;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact Form */
+.contact-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Animation Helper Classes */
+[data-aos] {
+    pointer-events: none;
+}
+
+[data-aos].aos-animate {
+    pointer-events: auto;
+}
+
+footer {
+  background: linear-gradient(#2d2a21, #E16428) ;
+  color: white;
+  text-align: justify;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 1em;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.gallery a {
+  display: block;
+  text-align: center;
+  width: 200px;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: #333;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: #fff;
+    color: #333;
+    border: 2px solid #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Responsif untuk layar kecil */
+@media screen and (max-width: 768px) {
+  .navbar,
+  .nav-links,
+  .hamburger {
+    display: none !important;
+  }
+  .company-name {
+    visibility: visible !important;
+    position: static !important;
+    font-size: 1rem;
+  }
+}
+
+#preloader {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #E16428;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}

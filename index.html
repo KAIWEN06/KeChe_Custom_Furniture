@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="KeChe_logo.png">
+    <title>KeChe Custom Furniture</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="HomeStyle.css">
+</head>
+
+
+<body>
+    <header class="header-hero">
+        <video id="heroVideo" autoplay muted loop playsinline class="hero-video">
+            <source src="/ASET_HOME/CKC_2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="header-overlay">
+            <div class="header-topbar">
+                <div class="logo-area">
+                    <img src="KeChe_logo.png" alt="Logo Perusahaan">
+                    <span class="company-name">KeChe Custom Furniture</span>
+                </div>
+                <nav class="navbar">
+                    <div class="hamburger" id="hamburger">&#9776;</div>
+                    <ul class="nav-links" id="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="#services" class="btn btn-hero">Lihat Layanan</a>
+        </div>
+    </header>
+
+    <section id="about" class="section-bg about-section" data-aos="fade-up" data-aos-duration="1200">
+        <h2 data-aos="fade-down">Tentang Kami</h2>
+        <div class="about-content" data-aos="zoom-in" data-aos-delay="300">
+            <p>KeChe Furniture adalah usaha yang bergerak di bidang produksi mebel custom berkualitas tinggi. Kami
+                menawarkan solusi furnitur yang dirancang khusus untuk memenuhi kebutuhan dan selera pelanggan. Dengan
+                mengedepankan kreativitas, keahlian, dan material terbaik, KeChe Furniture siap menciptakan produk yang
+                tidak hanya fungsional tetapi juga estetik.</p>
+            <a href="about.html" class="btn" data-aos="fade-up" data-aos-delay="400">Selengkapnya</a>
+        </div>
+    </section>
+
+    <section id="services" class="section-bg services-section" data-aos="fade-up">
+        <h2 data-aos="fade-down">Layanan Kami</h2>
+        <div class="services-grid">
+            <div class="service-card" data-aos="flip-left" data-aos-delay="100">
+                <img src="/ASET_HOME/LYN.png" alt="Desain Kustom" class="service-img">
+                <h3>Desain Kustom</h3>
+                <p>Furnitur sesuai keinginan Anda</p>
+            </div>
+            <div class="service-card" data-aos="flip-left" data-aos-delay="200">
+                <img src="/ASET_HOME/LYN3.jpg" alt="Produksi" class="service-img">
+                <h3>Produksi</h3>
+                <p>Proses produksi berkualitas</p>
+            </div>
+            <div class="service-card" data-aos="flip-left" data-aos-delay="300">
+                <img src="/ASET_HOME/LYN2.jpg" alt="Instalasi" class="service-img">
+                <h3>Instalasi</h3>
+                <p>Pemasangan profesional</p>
+            </div>
+        </div>
+        <a href="products.html" class="btn" data-aos="fade-up" data-aos-delay="400">Lihat Produk</a>
+    </section>
+
+    <section id="contact" class="section-bg contact-section" data-aos="fade-up">
+        <div class="contact-content" data-aos="zoom-in" data-aos-delay="300">
+            <p>Hubungi kami melalui form atau media sosial untuk informasi lebih lanjut.</p>
+            <a href="kontak.html" class="btn" data-aos="fade-up" data-aos-delay="400">Hubungi Kami</a>
+        </div>
+        <a href="#" class="back-to-top" id="backToTop" data-aos="fade-up" data-aos-delay="800">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="HomeScript.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: false,
+            mirror: true
+        });
+    </script>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+</body>
+
+</html>
